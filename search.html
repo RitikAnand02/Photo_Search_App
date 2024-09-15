@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Search App</title>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./search.css">
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <header>
+        <a href="./"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+        <a href="./"><h2 class="title">GALLERY</h2></a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything"/>
+            <input type="submit" value="SEARCH" class="search"/>
+        </form>
+    </header>
+
+    <main>
+        <h2 class="heading">&it;SEARCH FOR - <span id="search_query"></span> &gt;&gt;</h2>
+        <div class="container" id="result_container"></div>
+    </main>
+
+    <footer>
+        <a href="./"><h5>Gallery</h5></a>
+        <h1>|</h1>
+        <h5>Designed and Developed by &copy; RITIK ANAND 2024.</h5>
+        <h1>|</h1>
+        <a href="#" target="_blank">Github</a>
+    </footer>
+    <script src="./common.js"></script>
+    <script src="./search.js"></script>
+</body>
+</html>

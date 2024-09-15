@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Search App</title>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./detail.css">
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <header>
+        <a href="./"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+        <a href="./"><h2 class="title">GALLERY</h2></a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything"/>
+            <input type="submit" value="SEARCH" class="search"/>
+        </form>
+    </header>
+
+    <main>
+        <h2 class="heading">&lt;DETAILS OF - <span id="image_id"></span> &lt;&lt;</h2>
+        <div class="detail">
+        <img alt="primary" id="detail_image">
+        <div class="content">
+            <h2 class="description" id="description_text"></h2>
+            <br>
+            <h3>Uploaded by - @<span id="username"></span></h3>
+            <br>
+            <h4>Date - <span id="upload_date"></span></h4>
+            <br>
+            <h5><span id="like_count"></span> Likes (<span id="view_count"></span> Views)</h5>
+            <br>
+            <hr>
+            <br>
+            <h2 class="description" id="alt_description"></h2>
+            <br>
+            <br>
+            <br>
+            <h5>Base Color</h5>
+            <br>
+            <div class="image_color" id="image_color">
+                <span id="color_text"></span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" id="download_link" class="button">&lt;&lt;DOWNLOAD&gt;&gt;</a>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="./"><h5>Gallery</h5></a>
+        <h1>|</h1>
+        <h5>Designed and Developed by &copy RITIK ANAND 2024.</h5>
+        <h1>|</h1>
+        <a href="#" target="_blank">Github</a>
+    </footer>
+    <script src="./common.js"></script>
+    <script src="./detail.js"></script>
+</body>
+</html>
